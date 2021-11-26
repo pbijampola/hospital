@@ -29,7 +29,14 @@ class HomeController extends Controller
     }
 
     public function index(){
-        $doctors =Doctor::all();
+
+        if (Auth::id()){
+            return redirect('home');
+        }
+        else{
+            $doctors =Doctor::all();
         return view('user.home', compact('doctors'));
+        }
+
     }
 }

@@ -208,6 +208,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+              @include('messages')
             @yield("content")
           </div>
           <!-- content-wrapper ends -->

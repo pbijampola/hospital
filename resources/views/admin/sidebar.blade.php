@@ -132,6 +132,36 @@
         </div>
       </li>
       <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+            <i class="mdi mdi-laptop"></i>
+          </span>
+          <span class="menu-title">Appointment</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{{ route('appointment.index') }}">All Appointments</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('appointment.create') }}">Add Appointments</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+            <i class="mdi mdi-laptop"></i>
+          </span>
+          <span class="menu-title">Users</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">All users</a></li>
+            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Add user</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item menu-items">
         <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
           <span class="menu-icon">
             <i class="mdi mdi-file-document-box"></i>

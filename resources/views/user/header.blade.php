@@ -53,14 +53,17 @@
               <a class="nav-link" href="blog.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link " href="contact.html">Contact</a>
             </li>
 
             @if(Route::has('login'))
 
             @auth
-            <x-app-layout>
 
+            <li class="nav-item">
+                <a class="nav-link bg-success" href="{{ route('appointment.show') }}">My Appointment</a>
+              </li>
+            <x-app-layout>
             </x-app-layout>
             @else
             <li class="nav-item">
